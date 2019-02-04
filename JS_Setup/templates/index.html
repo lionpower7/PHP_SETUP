@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS_Setup</title>
+  <link rel="stylesheet" href="/static/css/startUp.css">
+  <script src="/static/js/startUp.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+  <section class="theBox">
+    <div class="quickFill">
+      <h1>Welcome To The Hall</h1>
+    </div>
+    <div class="firmST">
+      <form class="firmed" action="index.html" method="post">
+        <input type="text" id="humanINput" placeholder="Enter Your Name" required>
+        <input type="submit" id="thePress" onclick="sName()">
+      </form>
+    </div>
+  </section>
+  <script>
+    function sName() {
+      var theCont = document.getElementsByClassName('theBox');
+      var saluteTheUser = createElement('div');
+
+      var theAns = document.getElementById('humanINput').value;
+      theCont.appendChild(saluteTheUser);
+
+      saluteTheUser.setAttribute('class', 'theSalute animated fadeInRight 2s slower');
+      saluteTheUser.innerHTML = 'Hello' + ' ' + theAns;
+      var aBG = 'linear-gradient(to right top, #0093e1, #00dcd0, #3dff98, #7dffec)';
+      saluteTheUser.style.background = aBG;
+      saluteTheUser.style.padding = '5px';
+      saluteTheUser.style.color = 'white';
+      saluteTheUser.style.textAlign = 'center';
+      saluteTheUser.style.fontFamily = 'Staatliches';
+    }
+  </script>
+</body>
+</html>

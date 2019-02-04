@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Staatliches');
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.quickFill {
+  text-align: center;
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.theBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
